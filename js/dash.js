@@ -95,6 +95,7 @@ var p_array = {};
 var dg_array = {};
 var pInter = null;
 var reqfrom = null;
+var old_accordion = '';
 toastr.options = {
     closeButton: true,
     newestOnTop: true,
@@ -371,8 +372,14 @@ let ClearElements = () => {
     document.getElementById("penroll_send").style.display = "none"
 };
 
-function Close() {
-    $("#menu_div").collapse("toggle");
+function Close(accordion) {
+    if (old_accordion === accordion) {
+        $("#menu_div").collapse("show");
+    } else {
+        old_accordion = accordion;
+    }
+    $("#menuconf_div").collapse("show");
+    
     ClearElements();
     if (pInter) {
         clearInterval(pInter);

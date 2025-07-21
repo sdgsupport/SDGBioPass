@@ -37,3 +37,14 @@ body {
 .form-control[type="password"]::placeholder{
     color: rgb(39, 39, 39);
 }
+
+.form-control[type="text"]:focus,
+.form-control[type="password"]:focus{
+    background-color: rgb(1, 0, 49);
+    color: rgb(255, 255, 255);
+}
+
+.btn-outline-info:focus{
+    background-color: rgb(1, 0, 49);
+    color: rgb(255, 255, 255);
+}
