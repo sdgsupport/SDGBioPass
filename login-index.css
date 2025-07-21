@@ -1,0 +1,39 @@
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    background-image: url(login_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-down {
+    opacity: 0.3;
+    transform: translateY(-550px);
+    transition: all 0.9s ease;
+    position: relative;
+    box-shadow: 60px -16px 130px rgb(0, 0, 0);
+}
+
+.slide-down.show {
+    opacity: 0.85;
+    transform: translateY(0);
+    border-radius: 20px;
+}
+
+.form-control{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.form-control[type="text"],
+.form-control[type="password"] {
+    color: rgb(0, 0, 100);
+}
+
+.form-control[type="text"]::placeholder,
+.form-control[type="password"]::placeholder{
+    color: rgb(39, 39, 39);
+}
