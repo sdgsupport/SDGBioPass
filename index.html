@@ -29,18 +29,25 @@
                 <div class="fadeIn first text-center">
                     <img src="images/login_logo.png" id="icon" style="width: 77%;" alt="User Icon" />
                 </div>
-                <div class="form container" id="loginform">
+                <form class="form container" id="loginform">
                     <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-primary text-light"><i class="bi bi-person"></i></span>
+                        </div>
                         <input type="text" id="username" class="form-control" name="login" placeholder="Username">
                     </div>
                     <div class="input-group input-group-lg mb-3">
-                        <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-primary text-light"><i class="bi bi-key"></i></span>
+                        </div>
+                        <input type="password" id="password" class="form-control" name="password"
+                            placeholder="Password">
                     </div>
                     <div class="input-group input-group-lg mb-3">
                         <input type="submit" id="loginbtn" class="btn btn-lg btn-block btn-outline-info" value="Login"
                             onclick="Login()">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

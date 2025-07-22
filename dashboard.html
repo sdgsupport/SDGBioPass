@@ -30,7 +30,7 @@
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(37, 37, 73); z-index:1040;">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center text-light" href="">
+            <a class="navbar-brand d-flex align-items-center text-light fw-bold" href="">
                 <img src="images/logo.png" alt="Logo" width="35" height="35" class="me-2">
                 SDG BioPass
             </a>
@@ -38,21 +38,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active text-light dropdown-toggle" role="button" data-bs-toggle="modal"
+                        <a class="nav-link active text-light dropdown-toggle fw-bold" role="button" data-bs-toggle="modal"
                             data-bs-target="#aboutmodal" id="about_menu">
                             <span class="mr-2 d-none d-lg-inline small" id="about">Acerca de</span>
                             <i class="fas fa-info-circle"></i>
                         </a>
                     </li>
                     <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link active text-light dropdown-toggle" type=button data-bs-toggle="collapse"
-                            data-bs-target="#sys_settings_div" id="settings_menu">
+                        <a class="nav-link active text-light dropdown-toggle fw-bold" type=button data-bs-toggle="collapse"
+                            data-bs-target="#sys_settings_div" id="settings_menu" onclick="Close('sys_settings_div'); return false;">
                             <span class="mr-2 d-none d-lg-inline small" id=settings></span>
                             <i class="fas fa-cog"></i>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active text-light dropdown-toggle" href="" role="button"
+                        <a class="nav-link active text-light dropdown-toggle fw-bold" href="" role="button"
                             data-bs-toggle="modal" data-bs-target="#logoutModal">
                             <span class="mr-2 d-none d-lg-inline small" id="usertag">Administrator</span>
                             <i class="fas fa-sign-out-alt"></i>
@@ -100,9 +100,9 @@
     </nav>
     <div style="margin-top: 112px;"></div>
     <div class="accordion" id=dashboardaccordion>
-        <div class="accordion-item">
+        <div class="accordion-item m-0 p-0 border-0">
             <div class="accordion-collapse collapse fluid show" id="menu_div" data-bs-parent=#dashboardaccordion>
-                <div class=card-header id="div-menu">
+                <div class="card-header" id="div-menu">
                     <div class="text-center mt-2 mb-2">
                         <h1 class="mt-4" id="dashboard_title">SDG BioPass (Suprema - Kantech Integration)</h1>
                         <h2 style="font-weight:700" id="dashboard_label">Herramienta de configuraciones</h2>
@@ -116,7 +116,7 @@
             <div class="accordion-collapse collapse container" id=adddevs_div data-bs-parent=#dashboardaccordion>
                 <div class="card">
                     <div class="card-header">
-                        <h2 id=adddevstitle>Add Devices</h2>
+                        <h2 id=adddevstitle style="color:rgb(16, 62, 212);">Add Devices</h2>
                         <p id=adddevstext>**</p>
                     </div>
                     <div class=card-body>
@@ -205,7 +205,7 @@
             <div class="accordion-collapse collapse container" id=usersync_div data-bs-parent=#dashboardaccordion>
                 <div class=card>
                     <div class="card-header">
-                        <h2 id=usersynctitle>User Sync</h2>
+                        <h2 id=usersynctitle style="color:rgb(16, 62, 212);">User Sync</h2>
                         <p id=usersynctext>***</p>
                     </div>
                     <div class=card-body>
@@ -311,7 +311,7 @@
             <div class="accordion-collapse collapse container" id=penroll_div data-bs-parent=#dashboardaccordion>
                 <div class=card>
                     <div class="card-header">
-                        <h2 id=penroll_head>Pre-enrollment</h2>
+                        <h2 id=penroll_head style="color:rgb(16, 62, 212);">Pre-enrollment</h2>
                         <p id=penroll_headlbl>***</p>
                     </div>
                     <div class=card-body>
@@ -321,10 +321,10 @@
                                     <div class="card-header text-center" id=penroll_card>Users in platform</div>
                                     <div class="card-body">
                                         <div class=form style=text-align:center> <button type=button
-                                                class="btn btn-outline-success btn-lg" onclick=SendLink()
+                                                class="btn btn-outline-success mb-2 w-50" onclick=SendLink()
                                                 id=penroll_send><i class="fas fa-paper-plane"></i> <span
                                                     id=penroll_btn>Send Link</span></button>
-                                            <button type=button class="btn btn-outline-info btn-lg" onclick=Select()><i
+                                            <button type=button class="btn btn-outline-info mb-2 w-25" onclick=Select()><i
                                                     class="fas fa-sync-alt"></i> <span id=penroll_sel>Select
                                                     Users</span></button>
                                             <hr>
@@ -349,7 +349,7 @@
             <div class="accordion-collapse collapse container" id=kiosk_div data-bs-parent=#dashboardaccordion>
                 <div class=card>
                     <div class="card-header">
-                        <h2 id=kiosk_head>Kiosk</h2>
+                        <h2 id=kiosk_head style="color:rgb(16, 62, 212);">Kiosk</h2>
                         <p id=kiosk_headlbl>.</p>
                     </div>
                     <div class=card-body>
@@ -430,7 +430,7 @@
                                 </button>
                             </div>
                         </div>
-                        <h2 id=devicestitle></h2>
+                        <h2 id=devicestitle style="color:rgb(16, 62, 212);"></h2>
                         <p id=devicestext>***</p>
                     </div>
                     <div class=card-body>
@@ -472,7 +472,7 @@
                                     <div class=card>
                                         <div class=card-header>
                                             <h5 class=mb-0>
-                                                <p id=syncusertext>Header</p>
+                                                <p id=syncusertext style="color:rgb(7, 39, 145);">Header</p>
                                             </h5>
                                         </div>
                                         <div id=w_format class="card card-body" aria-labelledby="">
@@ -503,7 +503,7 @@
                                     data-bs-parent=#configurationaccordion>
                                     <div class=card>
                                         <div class=card-header>
-                                            <h5><label id=menucloud_head>Cloud</label></h5>
+                                            <h5 style="color:rgb(7, 39, 145);"><label id=menucloud_head>Cloud</label></h5>
                                         </div>
                                         <div class=card-body>
                                             <p class=text-muted id=menucloud_lbl>Before Activation</p>
@@ -616,7 +616,7 @@
                                     data-bs-parent=#configurationaccordion>
                                     <div class=card>
                                         <div class=card-header>
-                                            <h5 id=smtphead>SMTP Settings</h5>
+                                            <h5 id=smtphead style="color:rgb(7, 39, 145);">SMTP Settings</h5>
                                         </div>
                                         <div class=card-body>
                                             <div class="input-group mb-3">
@@ -738,7 +738,7 @@
             <div class="accordion-collapse collapse container" id="sys_settings_div" data-bs-parent=#dashboardaccordion>
                 <div class=card style=text-align:left>
                     <div class=card-header>
-                        <h2 id=confoptionstitle>.</h2>
+                        <h2 id=confoptionstitle style="color:rgb(7, 39, 145);">.</h2>
                         <p class=text-muted id=optionstext>...</p>
                         <p class=text-muted id=optionsnote>---</p>
                     </div>
@@ -1026,7 +1026,7 @@
         <div class="modal-dialog modal-m" role=document>
             <div class=modal-content>
                 <div class=modal-header>
-                    <h4 class=modal-title id=modaltitle>You are ...</h4>
+                    <h4 class=modal-title id=modaltitle style="color:rgb(7, 39, 145);">You are ...</h4>
                     <button class="btn btn-close" type=button data-bs-dismiss=modal aria-label=Close></button>
                 </div>
                 <div class=modal-body>
@@ -1047,7 +1047,7 @@
         <div class="modal-dialog modal-m" role=document>
             <div class=modal-content>
                 <div class=modal-header>
-                    <h4 class=modal-title>Suprema - Entrapass Integration</h4>
+                    <h4 class=modal-title style="color:rgb(7, 39, 145);">Suprema - Entrapass Integration</h4>
                     <button class="btn btn-close" type=button data-bs-dismiss=modal aria-label=Close></button>
                 </div>
                 <div class=modal-body> <img src=images/login_logo.png style=width:90% id=abouticon>
