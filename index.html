@@ -10,16 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/toastr.css" rel="stylesheet">
     <link rel="stylesheet" href="login-index.css">
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const card = document.getElementById('loginCard');
-            if (card) {
-                setTimeout(() => {
-                    card.classList.add('show');
-                }, 100);
-            }
-        });
-    </script>
+    <script src="index-contentLoaded.js"></script>
 </head>
 
 <body>
@@ -32,13 +23,17 @@
                 <form class="form container" id="loginform">
                     <div class="input-group input-group-lg mb-3">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-primary text-light"><i class="bi bi-person"></i></span>
+                            <span class="input-group-text bg-primary text-light">
+                                <i class="bi bi-person"></i>
+                            </span>
                         </div>
                         <input type="text" id="username" class="form-control" name="login" placeholder="Username">
                     </div>
                     <div class="input-group input-group-lg mb-3">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-primary text-light"><i class="bi bi-key"></i></span>
+                            <span class="input-group-text bg-primary text-light">
+                                <i class="bi bi-key"></i>
+                            </span>
                         </div>
                         <input type="password" id="password" class="form-control" name="password"
                             placeholder="Password">
